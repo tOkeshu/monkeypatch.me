@@ -1,0 +1,154 @@
+/* CSS */
+
+body {
+  font-family: Georgia;
+}
+
+a {
+  color: #4354A8;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #333333;
+}
+
+header, footer, nav, article {
+  display:block;
+}
+
+body > div:first-child {
+  margin: 1.5em auto;
+  width: 38em;
+}
+
+header .main-title {
+  font-size: 2em;
+  line-height: 1em;
+  margin: 0;
+  text-align: center;
+}
+
+header .tagline {
+  color: #666666;
+  font-size: 1em;
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  margin-bottom: 3em;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  text-align: center
+}
+
+nav ul li {
+  display: inline;
+  margin: 1em;
+}
+
+footer {
+  color: #666666;
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+
+/*
+ * page
+ */
+article.page header {
+  margin-bottom: 2em;
+}
+
+article.page header h1 {
+  margin-bottom: 0;
+}
+
+article.page header .byline {
+  color: #666666;
+  margin-top: 0;
+}
+
+/*
+ * blogpost
+ */
+article.blogpost header {
+  margin-bottom: 2em;
+}
+
+article.blogpost header h1 {
+  margin-bottom: 0;
+}
+
+article.blogpost header .byline {
+  color: #666666;
+  margin-top: 0;
+}
+
+article.blogpost > h1 {
+  font-size: 1.5em;
+  text-align: center;
+
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+article.blogpost > p {
+  text-align: justify;
+}
+
+/*
+ * frontpage
+ */
+
+article.frontpage h2 {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 36px;
+}
+
+/*
+ * Projects
+ */
+
+article.readme {
+  font-family: Helvetica, sans-serif;
+}
+
+article.readme h1 {
+  font-family: Georgia, sans-serif;
+  font-size: 3em;
+}
+
+article.readme h2 {
+  font-size: 1.5em;
+  border-bottom: 3px solid;
+}
+
+article.readme code {
+  padding: 0.15em;
+  background-color: #333333;
+  color: #ffffff;
+  -moz-border-radius-bottomleft:5px;
+  -moz-border-radius-bottomright:5px;
+  -moz-border-radius-topleft:5px;
+  -moz-border-radius-topright:5px;
+}
+
+article.readme pre code {
+  padding: 1em;
+  display: block;
+}
+
