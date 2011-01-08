@@ -4,7 +4,8 @@ layout: projects/readme
 
 # Mynus, the minimalist wiki
 
-The pupose of Mynus is to demonstrate the philosophy of "batteries included".
+The pupose of Mynus is to demonstrate the philosophy of
+[batteries included](http://www.python.org/about/#python-is-powerful-and-fast).
 Thus, Mynus will never depends on anything else than the Python's standard
 library.
 
@@ -26,23 +27,23 @@ or later.
 
 Use pip to install Mynus the easy way:
 
-    > pip install mynus
+    $ pip install mynus
 
 Another solution is to download the sources:
 
-    > git clone git://monkeypatch.me/mynus.git
-    > cd mynus
-    > python setup.py install
+    $ git clone git://monkeypatch.me/mynus.git
+    $ cd mynus
+    $ python setup.py install
 
-or download the latest version as a tarball
+or download the latest version as a tarball from
 [pypi](http://pypi.python.org/pypi/Mynus).
 
 
 Now you have Mynus, choose or create a directory and turn it into a wiki
 repository:
 
-    > mkdir wiki && cd wiki
-    > mynus
+    $ mkdir wiki && cd wiki
+    $ mynus
 
 This should launch a Mynus instance on the port 8000.
 
