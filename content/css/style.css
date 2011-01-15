@@ -59,6 +59,44 @@ footer {
   margin-bottom: 3em;
 }
 
+blockquote {
+  color: #4F4F4F;
+  background-color: #E8E8E8;
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+blockquote:before {
+  content: url('/images/quote-left.png');
+
+  width: 0;
+  height: 0;
+
+  float:left;
+  margin-top: -10px;
+  margin-left: -50px;
+}
+
+blockquote:after {
+  content: url('/images/quote-right.png');
+
+  width: 0;
+  height: 0;
+
+  float: right;
+  margin-top: -25px;
+  margin-right:-10px;
+}
+
+
 /*
  * page
  */
@@ -128,6 +166,7 @@ article.readme {
 }
 
 article.readme h1 {
+  color: #4354A8;
   font-family: Georgia, sans-serif;
   font-size: 3em;
 }
