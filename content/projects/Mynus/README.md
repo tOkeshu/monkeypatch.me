@@ -27,7 +27,7 @@ or later.
 
 Use pip to install Mynus the easy way:
 
-    $ pip install mynus
+    $ pip install Mynus
 
 Another solution is to download the sources:
 
