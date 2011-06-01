@@ -1,0 +1,19 @@
+/*
+ * blogarchives
+ */
+
+article.blogarchives ul li {
+  overflow: hidden;
+}
+
+article.blogarchives ul li time {
+  text-align: right;
+  display: inline-block;
+  width: 9em;
+}
+
+article.blogarchives ul li a {
+  float: right;
+  width: 25em;
+}
+

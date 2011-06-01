@@ -1,0 +1,91 @@
+/*
+ * blogpost
+ */
+
+article.blogpost header {
+  margin-bottom: 2em;
+}
+
+article.blogpost footer {
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  overflow: auto;
+  margin-top: 3em;
+}
+
+article.blogpost footer nav {
+  height: 2em;
+  margin: 0;
+}
+
+article.blogpost footer nav p {
+  width: 16.5em;
+}
+
+article.blogpost footer nav p.previous {
+  float: left;
+}
+article.blogpost footer nav p.previous span.arrow {
+  float: left;
+}
+article.blogpost footer nav p a {
+  text-align: justify;
+  width: 15em;
+}
+
+article.blogpost footer nav p.previous a {
+  float: right;
+}
+
+article.blogpost footer nav p.next {
+  float: right;
+}
+article.blogpost footer nav p.next span.arrow {
+  float: right;
+}
+article.blogpost footer nav p.next a {
+  float: left;
+}
+
+article.blogpost header h1 {
+  margin-bottom: 0;
+}
+
+article.blogpost header .byline {
+  color: #666666;
+  margin-top: 0;
+}
+
+article.blogpost > h1 {
+  font-size: 1.5em;
+  text-align: center;
+
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+article.blogpost > p {
+  text-align: justify;
+}
+
+article.blogpost code {
+  padding: 0.15em;
+  background-color: #333333;
+  color: #ffffff;
+  -moz-border-radius-bottomleft:5px;
+  -moz-border-radius-bottomright:5px;
+  -moz-border-radius-topleft:5px;
+  -moz-border-radius-topright:5px;
+}
+
+article.blogpost pre code {
+  padding: 1em;
+  display: block;
+}
+

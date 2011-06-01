@@ -1,0 +1,27 @@
+<%inherit file="base.html"/>
+<%!
+    from datetime import datetime
+%>
+
+<article class="blogarchives">
+  <header>
+    <h1>${title}</h1>
+    <p>
+      ${page.html}
+    </p>
+  </header>
+
+  <ul>
+  % for entry in reversed(page.siblings):
+    <li>
+      <%
+         time = datetime.strptime(entry.metadata.datetime, "%Y-%m-%d %H:%M:%S")
+         date = time.date()
+      %>
+      <time datetime="${entry.metadata.datetime}" class="timeago">${date}</time>
+      <span>&#8213;</span>
+      <a href="${entry.permalink}">${entry.metadata.title}</a>
+    </li>
+  % endfor
+  </ul>
+</article>

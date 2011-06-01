@@ -1,0 +1,10 @@
+/*
+ * frontpage
+ */
+
+article.frontpage h2 {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 36px;
+}
+
