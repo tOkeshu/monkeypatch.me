@@ -81,6 +81,10 @@ blockquote span.author {
   margin-top: 1em;
 }
 
+blockquote span.author:before {
+  content: "—";
+}
+
 blockquote:before {
   content: url('../images/quote-left.png');
 
