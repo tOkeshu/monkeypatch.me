@@ -9,11 +9,11 @@ article.blogarchives ul li {
 article.blogarchives ul li time {
   text-align: right;
   display: inline-block;
-  width: 9em;
+  width: 10em;
 }
 
 article.blogarchives ul li a {
   float: right;
-  width: 25em;
+  width: 24em;
 }
 

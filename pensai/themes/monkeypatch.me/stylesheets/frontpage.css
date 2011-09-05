@@ -2,7 +2,7 @@
  * frontpage
  */
 
-article.frontpage h2 {
+article.frontpage > div {
   text-align: center;
   font-size: 1.5em;
   line-height: 36px;
