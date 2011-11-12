@@ -12,12 +12,16 @@ I have graduated a
 
 ## Contact
 
-Emails:
+Professional:
 
-  - Professionnal: `<romain gauthier at af83 com>`
-  - Personnal: `<rgauthier at masteri2l org>`
+  - `<romain gauthier at af83 com>`
 
-Irc (nickname tOkeshu):
+Personal:
+
+  - `<romain gauthier at monkeypatch me>`
+  - `<rgauthier at masteri2l org>`
+
+Irc (nickname tOkeshu on [Freenode](http://freenode.net/)):
 
   - [#masteri2l](irc://irc.freenode.org#masteri2l)
   - [#ung](irc://irc.freenode.org#ung)
@@ -57,4 +61,6 @@ with the free software movement.
 
 ## Around the Web
 
-You can [follow me on identi.ca](http://identi.ca/rgauthier).
+You can [follow me on identi.ca](http://identi.ca/rgauthier) and see my code on
+[gitorious](http://gitorious.org/~rgauthier) or
+[github](http://github.com/rgauthier).
