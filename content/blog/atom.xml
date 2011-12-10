@@ -1,5 +1,5 @@
 ===
 title: BASIC blog full text feed
-extends: atom.j2
+extends: monkeypatch.me/atom.j2
 listable: false
 ===

@@ -55,7 +55,7 @@ tagger:
         blog:
             source: blog
             target: blog/tags
-            template: tagged_posts.j2
+            template: monkeypatch.me/tagged_posts.j2
             archive_extension: html
             meta:
                 listable: false

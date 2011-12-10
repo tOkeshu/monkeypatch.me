@@ -1,11 +1,11 @@
 ---
-extends: base.j2
+extends: monkeypatch.me/base.j2
 default_block: main
 title: BASIC - A hyde website
 description: Home page for the BASIC hyde template
 ---
 
-{% from "macros.j2" import render_excerpt with context %}
+{% from "monkeypatch.me/macros.j2" import render_excerpt with context %}
 <section class="blog_excerpt">
 {% set latest = site.content.walk_resources_sorted_by_time()|first %}
 
