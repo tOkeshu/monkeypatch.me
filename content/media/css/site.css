@@ -307,13 +307,22 @@ article.post p,
 article.page p{
     font-size: 16px;
     line-height: 24px;
-    margin: 6px 0;
+    margin-top: 6px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+    margin-left: 0px;
     text-align: justify;
 }
 
 article.post img{
     display: block;
     margin-bottom: 24px;
+}
+
+
+article.post ul,
+article.post ol {
+    padding-left: 40px;
 }
 
 .post time{
