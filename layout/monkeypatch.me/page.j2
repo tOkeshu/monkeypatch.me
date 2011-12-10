@@ -1,0 +1,29 @@
+{% extends "monkeypatch.me/base.j2" %}
+
+{% block main -%}
+<article class="page">
+<h1 class="title">
+    <a href="{{ content_url(resource.url) }}">
+        {{ resource.meta.title }}
+    </a>
+</h1>
+
+{% if resource.meta.tags %}
+<ul class="tags clear">
+{% for tag in resource.meta.tags %}
+<li>
+    <a class="small" href="{{ content_url('blog/tags/'~tag~'.html') }}">
+        {{ tag }}
+    </a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% filter markdown|typogrify -%}
+{% mark page -%}
+{% block page -%}{%- endblock %}
+{%- endmark %}
+{%- endfilter %}
+</article>
+
+{%- endblock %}

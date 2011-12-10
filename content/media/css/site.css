@@ -290,8 +290,9 @@ section.content{
 
 /* Content */
 
-article.post p{
-    font-size: 12px;
+article.post p,
+article.page p{
+    font-size: 16px;
     line-height: 24px;
     margin: 6px 0;
 }
