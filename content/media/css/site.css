@@ -64,6 +64,19 @@ body{
     text-shadow: 0px 2px 0px #efefef;
 }
 
+h1,
+h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+
 #container{
           background-color: #eaeaea;
           width: 640px;
@@ -355,6 +368,8 @@ blockquote:after {
   float: right;
   margin-top: -25px;
   margin-right:-10px;
+
+  clear: both;
 }
 
 ul.tags{
@@ -493,17 +508,33 @@ a.backlink:hover, a.prev:hover, a.next:hover{
 }
 
 
-.codebox {
-  margin-top: 8px;
-  margin-bottom: 12px;
-}
-.code {
+code {
+  padding: 0.15em;
+  background-color: #333333;
+  color: #ffffff;
+  -moz-border-radius-bottomleft:5px;
+  -moz-border-radius-bottomright:5px;
+  -moz-border-radius-topleft:5px;
+  -moz-border-radius-topright:5px;
+  text-shadow: none;
+
+/* .code { */
   position: relative;
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  background-color: #F0F3F3;
+  /* background-color: #F0F3F3; */
+}
+
+pre code {
+  padding: 1em;
+  display: block;
+}
+
+.codebox {
+  margin-top: 8px;
+  margin-bottom: 12px;
 }
 .code figcaption {
   font-size: 10px;
