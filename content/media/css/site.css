@@ -308,6 +308,7 @@ article.page p{
     font-size: 16px;
     line-height: 24px;
     margin: 6px 0;
+    text-align: justify;
 }
 
 article.post img{
@@ -509,7 +510,9 @@ a.backlink:hover, a.prev:hover, a.next:hover{
 
 
 code {
-  padding: 0.15em;
+    font-family: monospace;
+    font-size: 12px;
+  padding: 0.5em;
   background-color: #333333;
   color: #ffffff;
   -moz-border-radius-bottomleft:5px;
@@ -528,6 +531,8 @@ code {
 }
 
 pre code {
+    margin-top: 1em;
+    margin-bottom: 1em;
   padding: 1em;
   display: block;
 }
