@@ -11,6 +11,7 @@ plugins:
     - hyde.ext.plugins.textlinks.TextlinksPlugin
 context:
     data:
+        charset: utf-8
         tweet_via: ringce
         menu:
             -
@@ -39,8 +40,8 @@ context:
                 url: about.html
 meta:
     nodemeta: meta.yaml
-    created: !!timestamp 2010-01-01 00:00:00
-    author: Lakshmi Vyasarajan
+    created: !!timestamp 2011-12-10 18:53:07
+    author: Romain Gauthier
 sorter:
     time:
         attr:
