@@ -1,13 +1,36 @@
 {% extends "monkeypatch.me/base.j2" %}
-{% from "monkeypatch.me/macros.j2" import render_excerpt with context  %}
 {% block main %}
+<section class="archives">
 {% block page_title %}<h1 class="title">{{ resource.meta.title }}</h1>{% endblock %}
 
-<ul class="listing clear">
+<ul class="posts clear">
+
 {% for res in resource.node.walk_resources_sorted_by_time() %}
-<li>
-    {{ render_excerpt(res) }}
+{% refer to res.url as post %}
+<li class="post clear">
+
+  <time datetime="{{ res.meta.created.strftime('%Y-%m-%d') }}">
+    {{ res.meta.created.strftime('%a, %d %b %Y') }}
+  </time>
+  
+  <a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a>
+  
+  {% if res.meta.tags %}
+  <ul class="tags">
+    {% for tag in res.meta.tags %}
+    <li>
+      <a class="small" href="{{ content_url('blog/tags/'~tag~'.html') }}">
+        {{ tag }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
 </li>
 {% endfor %}
+
 </ul>
+</section>
 {% endblock %}
+

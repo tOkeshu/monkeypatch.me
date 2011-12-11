@@ -395,17 +395,19 @@ ul.tags li{
 ul.tags li a{
     color: #999;
     text-decoration: none;
+    padding-left: 0;
+    padding-right: 0.75em;
 }
 
-h1.tag:before,
-ul.tags li a:before{
-    content: '\00AB';
-}
+/* h1.tag:before, */
+/* ul.tags li a:before{ */
+/*     content: '\00AB'; */
+/* } */
 
-h1.tag:after,
-ul.tags li a:after{
-    content: '\00BB';
-}
+/* h1.tag:after, */
+/* ul.tags li a:after{ */
+/*     content: '\00BB'; */
+/* } */
 
 ul.tags li a:hover{
     color: #222;
@@ -502,7 +504,7 @@ a.backlink:hover, a.prev:hover, a.next:hover{
 .archives li.post time{
     color: #999;
     text-shadow: 0px 2px 0px #fff;
-    margin-right: 24px;
+    /* margin-right: 24px; */
     display:block;
     float: left;
     width: 120px;
