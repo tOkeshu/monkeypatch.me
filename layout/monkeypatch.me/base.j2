@@ -23,7 +23,7 @@
         compatibility mode is within the first 1K bytes
         code.google.com/p/chromium/issues/detail?id=23003 -->
 
-  <title>{% block title %}{{ resource.meta.title }}{% endblock %}</title>
+  <title>{% block title %}{{ resource.meta.title }}{% endblock %} | monkeypatch.me</title>
   <meta name="description" content="{{ resource.meta.description }}">
   <meta name="author" content="{{ resource.meta.author }}">
 
@@ -56,8 +56,8 @@
       <div id="main" role="main">
           <header class="banner clearfix">
           {% block header -%}
-            <h1>BASIC</h1>
-            <h3>A hyde website</h3>
+            <h1>monkeypatch.me</h1>
+            <h3>A life of monkeypatch'd experiences</h3>
           {%- endblock %}
           {% block nav %}
           {% from "monkeypatch.me/macros.j2" import render_nav with context %}
@@ -72,7 +72,7 @@
     {% endblock container %}
   </div> <!--! end of #container -->
   <footer>
-      Powered by <a href="http://ringce.com/hyde">hyde</a>.
+      Created by <a href="/~rgauthier">Romain Gauthier</a>, powered by <a href="http://ringce.com/hyde">hyde</a>.
   </footer>
   {% endblock content%}
   {% block js %}
