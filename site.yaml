@@ -20,17 +20,17 @@ context:
                 type: page
                 url: index.html
             -
-                name: Portfolio
-                description: Portfolio
-                css_class: portfolio
-                type: node
-                url: portfolio
-            -
                 name: Blog
                 description: Blog
                 css_class: blog
                 type: node
                 url: blog
+            -
+                name: Projects
+                description: Projects
+                css_class: projects
+                type: node
+                url: projects
             -
                 name: About
                 description: About
