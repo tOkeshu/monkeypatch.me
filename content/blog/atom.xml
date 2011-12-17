@@ -1,0 +1,5 @@
+===
+title: MonkeyPatch.me blog full text feed
+extends: monkeypatch.me/atom.j2
+listable: false
+===
