@@ -30,8 +30,8 @@ context:
                 name: Projects
                 description: Projects
                 css_class: projects
-                type: node
-                url: projects
+                type: page
+                url: blog/tags/projects.html
             -
                 name: About
                 description: About
