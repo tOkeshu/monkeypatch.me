@@ -1,0 +1,104 @@
+---
+title: Announcing Fipes 0.1.0
+description: Announcing Fipes 0.1.0
+created: !!timestamp '2012-04-21 21:56:31'
+author: rgauthier
+tags:
+  - fipes
+  - projects
+  - cowboy
+  - erlang
+  - backbone
+---
+
+{% mark excerpt -%}
+
+As said in the [previous post](/blog/backbone-tnetstrings-0.1.0.html),
+I'm working on a neat project called [Fipes](http://fipelines.org), a
+web application to share files with your friends without hassles. What
+makes Fipes different from other products like [Dropbox](https://www.dropbox.com),
+[Box](http://box.com) or even *Open Source* ones like
+[SparkleShare](http://sparkleshare.org/) and
+[Syncany](http://www.syncany.org/), is that Fipes is
+*privacy-friendly* and *simpler*.
+
+{%- endmark %}
+
+
+Privacy-Friendly
+----------------
+
+The initial idea was to allow anyone to share files by giving a link.
+Whereas there is a lot of web applications offering this service, they
+often ask you to create an account. Moreover, to share files you need
+to upload them to their server, which can be a problem when you feel
+that your data or your privacy is a sensible thing. For example,
+[think of](http://www.wired.com/threatlevel/2011/05/dropbox-ftc/) all
+the enterprise related data dropbox could access to.
+
+So what I wanted was something easy to use while respecting my
+privacy. That's why I came up with these simple goals:
+
+  - Provide a small web application.
+  - Being easy to install, to launch and easy to use.
+  - Do **not** keep any sensible data about you or your files.
+  - Being free as in freedom, in other words a free software.
+
+To fulfill them, Fipes take a radical approch at the technical level.
+
+How it works?
+-------------
+
+Fipes is composed of two parts: a RESTful API written in Erlang with
+[Cowboy](https://github.com/extend/cowboy) and a JavaScript
+application written with
+[Backbone](http://documentcloud.github.com/backbone).
+
+The workflow is easy to grasp:
+
+  1. Choose a file you want to share
+  2. Ask the server to generate a public link
+  3. Give the link to your friends
+  
+The fun part is that, until someone use the link you gave them, *the
+file is not uploaded to the server*. Indeed, when choosing a file, you
+register it on the server but your browser does not send any file data
+yet.
+
+So what happen when someone use the link? The server send to your
+browser a message asking for the file data. Then the JavaScript
+application slices the file in several parts and send them to the
+server.
+
+As Fipes does not want to keep any file data, as soon as the server
+receive chunks it forward them to the downloader.
+
+On the downloader side, the file is retrieved via a simple chunked
+response.
+
+Here is a little recap with a sequence diagram:
+
+![Fipes Sequence Diagram](/blog/images/fipes-seq-diag.png)
+
+Further explanations and what's next
+------------------------------------
+
+What the Fipes model implies is that the user experience is synchronous.
+Indeed, if you quit the page, the files you offer are not available anymore.
+Thus you need to let the page open until your friends got the whole file.
+
+Another side effect of the « lazy upload » technique is that you don't
+have to wait for the whole file to be uploaded to share it with your
+friends.
+
+There is still more work to do on Fipes to achieves its goals, but I
+hope it will be useful to others. In the next weeks I'll work on some
+features, like the support of download resuming or a https version for
+[the online instance](http://fipelines.org). However the most
+important parts will be UI related as the current version is not fully
+understandable.
+
+As Fipes is a free software, any
+[contribution](http://github.com/tOkeshu/fipes) is of course very
+welcome :)
+
