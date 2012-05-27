@@ -1,6 +1,7 @@
 Blog Posts
 ==========
 
+- [Fixing the 949 problem with Fipes](/blog/fixing-the-949-problem-with-fipes.html)
 - [Mixing professional and personal git configurations](/blog/mixing-professional-and-personal-git-configurations.html)
 - [Backbone-TNetStrings-0.1.0](/blog/backbone-tnetstrings-0.1.0.html)
 - [Publishing Git repositories, the quick and dirty way](/blog/publishing-git-repositories-the-quick-and-dirty-way.html)
