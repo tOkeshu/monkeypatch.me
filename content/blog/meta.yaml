@@ -1,3 +1,0 @@
-extends: monkeypatch.me/blog.j2
-default_block: post
-listable: true

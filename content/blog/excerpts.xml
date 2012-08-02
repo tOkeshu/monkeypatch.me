@@ -1,6 +1,0 @@
-===
-title: MonkeyPatch.me blog excerpts feed
-extends: monkeypatch.me/atom.j2
-excerpts_only: true
-listable: false
-===
