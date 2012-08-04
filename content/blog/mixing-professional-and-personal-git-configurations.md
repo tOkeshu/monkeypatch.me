@@ -69,7 +69,7 @@ And you're done.
 
 However, this can be tedious to use the option constantly and think
 whether or not to use it. To make your life easier you can use the
-̀GIT_TEMPLATE_DIR` environment variable. But don't forget you have to
+`GIT_TEMPLATE_DIR` environment variable. But don't forget you have to
 set it only when you want to change of context.
 
 As I'm working with ruby very often, I already have rvm installed so I
