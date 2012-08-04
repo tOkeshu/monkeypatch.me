@@ -1,5 +1,5 @@
-Publish Git repositories, the quick and dirty way
-=================================================
+Publishing Git repositories, the quick and dirty way
+====================================================
 
 
 In the previous post, we discussed
