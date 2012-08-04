@@ -1,14 +1,6 @@
----
-title: Mixing professional and personal git configurations
-description: Mixing professional and personal git configurations
-created: !!timestamp '2012-01-29 18:49:20'
-author: rgauthier
-tags:
-  - tips
-  - git
----
+Mixing professional and personal git configurations
+===================================================
 
-{% mark excerpt -%}
 
 Many developers publish code in 2 different contexts:
 
@@ -18,8 +10,6 @@ Many developers publish code in 2 different contexts:
 Most of the time this means two different e-mails.
 So how can you manage your git configuration to help you distinguish
 these two environments ?
-
-{%- endmark %}
 
 
 The template directory

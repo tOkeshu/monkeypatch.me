@@ -1,13 +1,6 @@
----
-title: Hosting Git repositories, the quick and dirty way
-description: Hosting Git repositories, the quick and dirty way
-created: !!timestamp '2011-06-11 22:08:16'
-author: rgauthier
-tags:
-  - git
----
+Hosting Git repositories, the quick and dirty way
+=================================================
 
-{% mark excerpt -%}
 
 First you write code, for yourself or for other projects. Then you
 need to host this code on a centralized place to avoid the painful
@@ -15,8 +8,6 @@ synchronization between your 2-or-more machines.
 
 But what are your options when you don't want to waste your time on
 fancy things like github, gitorious or even gitosis?
-
-{%- endmark %}
 
 On your local machine
 ---------------------

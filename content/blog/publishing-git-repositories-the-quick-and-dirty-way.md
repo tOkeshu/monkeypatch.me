@@ -1,21 +1,12 @@
----
-title: Publish Git repositories, the quick and dirty way
-description: Publish Git repositories, the quick and dirty way
-created: !!timestamp '2011-06-12 19:06:04'
-author: rgauthier
-tags:
-  - git
----
+Publish Git repositories, the quick and dirty way
+=================================================
 
-{% mark excerpt -%}
 
 In the previous post, we discussed
 [how to host git repositories](hosting-git-repositories-the-quick-and-dirty-way.html). This
 time, we'll learn how to publish our code in 5 minutes chrono.
 
 What you need is a *bare repository* and a *web server*.
-
-{%- endmark %}
 
 The bare repository
 -------------------

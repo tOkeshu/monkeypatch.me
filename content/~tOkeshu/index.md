@@ -1,12 +1,6 @@
----
-extends: monkeypatch.me/page.j2
-default_block: page
-title: Romain Gauthier (tOkeshu)
-description: Home page of Romain Gauthier
----
+Romain Gauthier (tOkeshu)
+=========================
 
-About me
---------
 
 I currently work for [af83](http://www.af83.com).
 

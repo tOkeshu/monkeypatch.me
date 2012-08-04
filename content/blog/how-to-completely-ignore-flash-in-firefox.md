@@ -1,14 +1,6 @@
----
-title: How to ignore completely Flash in Firefox?
-description: How to ignore completely Flash in Firefox?
-created: !!timestamp '2011-02-07 16:35:55'
-author: rgauthier
-tags:
-  - tips
-  - firefox
----
+How to ignore completely Flash in Firefox?
+==========================================
 
-{% mark excerpt -%}
 
 Some of you don't want Flash in their browser and they are right!
 
@@ -17,8 +9,6 @@ it. But, in this case, how to tell Firefox to stop to annoy us with
 the "missing plugin" notifications ?
 
 Call `about:config` to the rescue!
-
-{%- endmark %}
 
 
 Desactivate the "click here to download plugin" zones.

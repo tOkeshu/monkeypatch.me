@@ -1,15 +1,6 @@
----
-title: Backbone-TNetStrings-0.1.0
-description: Backbone-TNetStrings-0.1.0
-created: !!timestamp '2011-12-17 21:48:06'
-author: rgauthier
-tags:
-  - projects
-  - backbone
-  - tnetstrings
----
+Backbone-TNetStrings-0.1.0
+==========================
 
-{% mark excerpt -%}
 
 Recently, I started a project using Erlang and Javascript,
 i.e. [Cowboy](https://github.com/extend/cowboy) and
@@ -20,8 +11,6 @@ browser and the server. Indeed, I wanted to give
 
 The result is
 [Backbone-TNetStrings](https://github.com/tOkeshu/backbone-tnetstrings).
-
-{%- endmark %}
 
 
 Backbone-TNetStrings

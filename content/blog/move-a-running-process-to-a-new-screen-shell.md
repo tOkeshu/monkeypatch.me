@@ -1,15 +1,6 @@
----
-title: Move a running process to a new screen shell
-description: Move a running process to a new screen shell
-created: !!timestamp '2011-04-24 18:06:08'
-author: rgauthier
-tags:
-  - tips
-  - process
-  - screen
----
+Move a running process to a new screen shell
+============================================
 
-{% mark excerpt -%}
 
 The purpose of this article is to show you how to move a process
 from your traditional shell to a new screen session.

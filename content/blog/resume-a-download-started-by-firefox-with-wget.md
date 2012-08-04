@@ -1,22 +1,11 @@
----
-title: Resume a download started by firefox with wget
-description: Resume a download started by firefox with wget
-created: !!timestamp '2011-02-07 12:08:19'
-author: rgauthier
-tags:
-  - tips
-  - firefox
-  - wget
----
+Resume a download started by firefox with wget
+==============================================
 
-{% mark excerpt -%}
 
 There is many situations where it can be useful to resume an
 unfinished download started by Mozilla Firefox. This is easily
 feasible by using the `wget` command and the `.part` file of a paused
 download.
-
-{%- endmark %}
 
 Partial download from Firefox
 -----------------------------

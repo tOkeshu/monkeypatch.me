@@ -1,9 +1,6 @@
----
-extends: monkeypatch.me/page.j2
-default_block: page
-title: About
-description: About
----
+About
+=====
+
 
 Thousands of tiny experiences,
 
@@ -13,10 +10,12 @@ every anger we let explode, build ourselves. That shapes us as so many
 monkey-patches.
 
 
-  > If we meet one day, there is big chances that we spend most of our time
-  > confronting ideas.
+<blockquote>
+  If we meet one day, there is big chances that we spend most of our time
+  confronting ideas.
 
 
-  > Thus there is big chances too you would be able to
-  > [monkeypatch.me](http://monkeypatch.me) :)
+  Thus there is big chances too you would be able to
+  <a href="http://monkeypatch.me">monkeypatch.me</a> :)
+</blockquote
 
