@@ -8,5 +8,5 @@ A no-hassle web service to share files with your friends. Available online at [f
 
 ## [Backbone-TNetStrings](/blog/backbone-tnetstrings-0.1.0.html)
 
-A TNetStrings adapter for Backbone.
+A [TNetStrings](http://tnetstrings.org/) adapter for Backbone.
 
