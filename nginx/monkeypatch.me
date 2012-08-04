@@ -1,0 +1,52 @@
+# monkeypatch.me
+lua_package_path '/usr/share/lua/5.1/?.lua;';
+
+server {
+    listen      80;
+    server_name monkeypatch.me;
+    root        /var/www/monkeypatch.me/content;
+    access_log  /var/log/nginx/monkeypatch.me.access.log;
+
+    # Root
+    location = / {
+        rewrite ^ /blog;
+    }
+
+    # Engine
+    location ~ (.+)\.html$ {
+        default_type 'text/html';
+
+        set $template "monkeypatch.me";
+        set $file $1;
+
+        if (-f $document_root/$1.md) {
+            content_by_lua_file /var/www/monkeypatch.me/nginx/engine.lua;
+            break;
+        }
+    }
+
+    # Look for an index file
+    location ~ .+/$ {
+        rewrite (.*) $1/index.html last;
+    }
+
+    # Raw files
+    location /files {
+        alias /var/www/monkeypatch.me;
+    }
+
+    # Assets
+    location /assets {
+        alias /var/www/monkeypatch.me/assets;
+    }
+
+    # Github Webhook
+    location = /github-webhook {
+        if ($request_method ~ ^(GET|HEAD|DELETE)$ ) {
+            return 405;
+        }
+
+        content_by_lua_file /var/www/monkeypatch.me/nginx/github-webhook.lua;
+    }
+}
+
