@@ -20,6 +20,7 @@
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/blog">Blog</a></li>
+        <li><a href="/berlin">Berlin</a></li>
         <li><a href="/projects">Projects</a></li>
         <li><a href="/about.html">About</a></li>
       </ul>
