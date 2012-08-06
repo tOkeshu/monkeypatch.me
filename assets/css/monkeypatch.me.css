@@ -5,7 +5,7 @@ html, body {
 
 body {
     font-family: 'Droid Sans', serif;
-    background: url("/assets/images/damier.jpg") repeat scroll 0 0 #FAFBFC;
+    background: url("/assets/pictos/damier.jpg") repeat scroll 0 0 #FAFBFC;
     color: #555555;
 }
 
@@ -47,7 +47,7 @@ p {
 
 blockquote:after {
     clear: both;
-    content: url("/assets/images/quote-right.png");
+    content: url("/assets/pictos/quote-right.png");
     float: right;
     height: 0;
     margin-right: -10px;
@@ -56,7 +56,7 @@ blockquote:after {
 }
 
 blockquote:before {
-    content: url("/assets/images/quote-left.png");
+    content: url("/assets/pictos/quote-left.png");
     float: left;
     height: 0;
     margin-left: -50px;
