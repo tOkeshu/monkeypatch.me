@@ -29,5 +29,7 @@
 
   </div>
 
+  <script src="/assets/js/boot.js" type="text/javascript"></script>
+
 </body>
 </html>
