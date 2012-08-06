@@ -22,10 +22,6 @@ h1 {
     margin-bottom: 30px;
 }
 
-h2 {
-    font-size:
-}
-
 h2, h3, h4, h5 {
     font-family: 'Lato', serif;
     font-weight: normal;
@@ -109,7 +105,7 @@ blockquote span.author {
 
 #container > article {
     clear: both;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 #container > article ul {
@@ -138,5 +134,14 @@ code {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
     font-family: monospace;
+}
+
+#comments {
+    border-top: 1px solid #eeeeee;
+    margin-top: 40px;
+}
+
+#comments .juvia-container {
+    margin-top: 20px;
 }
 
