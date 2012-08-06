@@ -12,7 +12,20 @@ server {
         rewrite ^ /blog;
     }
 
-    # Engine
+    # Berlin theme
+    location ~ (/berlin/.+)\.html$ {
+        default_type 'text/html';
+
+        set $template "berlin";
+        set $file $1;
+
+        if (-f $document_root/$1.md) {
+            content_by_lua_file /var/www/monkeypatch.me/nginx/engine.lua;
+            break;
+        }
+    }
+
+    # Default theme
     location ~ (.+)\.html$ {
         default_type 'text/html';
 
