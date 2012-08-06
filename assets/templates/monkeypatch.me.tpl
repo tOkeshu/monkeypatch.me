@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>%s</title>
+    <title>%s | monkeypatch.me</title>
 
     <link rel="stylesheet" href="/assets/css/monkeypatch.me.css">
     <link href="http://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet" type="text/css">
