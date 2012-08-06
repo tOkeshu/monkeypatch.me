@@ -20,7 +20,7 @@ Mais j'y vais comment ?
   Si il y a bien une chose que j'ai apprécié à Paris c'était de
   laisser la bagnole derrière moi;
 - En train ? Pourquoi pas… Oui mais non, je veux voyager. On ne change
-  pas de Pays comme on change d'appartement. J'ai envie de m'impregner
+  pas de Pays comme on change d'appartement. J'ai envie de m'imprégner
   du voyage, j'ai envie de sentir que je pars loin de chez moi.
 
 Alors ce sera le **vélo**. Oui vous avez bien lu, **j'irai à Berlin en
