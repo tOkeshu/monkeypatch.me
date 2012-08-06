@@ -15,7 +15,7 @@
         <a title="Vivement Berlin !" href="/berlin">Vivement Berlin !</a>
       </h1>
       <a href="/berlin">
-        <img src="http://placekitten.com/700/200">
+        <img src="/assets/images/un-velo-dans-les-champs.jpg">
       </a>
     </nav>
 
