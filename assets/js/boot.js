@@ -3,8 +3,7 @@
 
     if (comments) {
         // Add default text to the comments block
-        var text = document.createTextNode("Chargement…");
-        comments.appendChild(text);
+        comments.innerHTML = "<p>Chargement…</p>";
 
         // Create the juvia script element
         var script = document.createElement("script");
