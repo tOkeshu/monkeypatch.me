@@ -5,7 +5,7 @@
     <title>%s | Vivement Berlin !</title>
 
     <link rel="stylesheet" href="/assets/css/berlin.css">
-    <link href="http://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 </head>
 <body>
 
