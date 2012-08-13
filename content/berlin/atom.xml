@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Vivement Berlin !</title>
+ <subtitle>Un voyage de 1500 km entre Boulogne-sur-mer et Berlin.</subtitle>
+ <link href="http://monkeypatch.me/berlin"/>
+ <updated>2010-08-13T17:48:00Z</updated>
+ <author>
+   <name>Romain Gauthier</name>
+   <email>romain.gauthier+berlin@monkeypatch.me</email>
+ </author>
+ <id>urn:uuid:a13a0ff1-a4db-4823-bbf0-c04e20ff991d</id>
+
+ <entry>
+   <title>Jour 1 : De Colembert à Eperlecques</title>
+   <link href="http://monkeypatch.me/berlin/jour-1-de-colembert-a-eperlecques.html"/>
+   <id>urn:uuid:c817d212-c75e-407c-a70a-a1e89292b6b8</id>
+   <updated>2010-08-13T18:00:00Z</updated>
+ </entry>
+
+ <entry>
+   <title>Le projet</title>
+   <link href="http://monkeypatch.me/berlin/le-projet.html"/>
+   <id>urn:uuid:6a421281-92cc-4fc4-b516-31f5f944120b</id>
+   <updated>2010-08-06T17:14:06Z</updated>
+ </entry>
+
+ <entry>
+   <title>Vivement Berlin !</title>
+   <link href="http://monkeypatch.me/berlin/vivement-berlin.html"/>
+   <id>urn:uuid:d1048160-ccad-40fc-8c98-a0f0e83c3c58</id>
+   <updated>2010-08-06T15:08:50Z</updated>
+ </entry>
+
+</feed>
