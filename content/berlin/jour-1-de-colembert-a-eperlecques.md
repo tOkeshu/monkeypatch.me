@@ -44,6 +44,3 @@ au jambes…
 - Recques sur Hem
 - Munq-Nieurlet
 - Commune d'Eperlecques
-
-
-<section id="comments"></section>
