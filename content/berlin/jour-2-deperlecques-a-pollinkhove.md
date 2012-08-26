@@ -8,7 +8,7 @@ Je rejoint très vite Watten, mon objectif de la veille.  Je longe le
 Canal jusqu'à Bergues sans oublier de faire une pause d'1h pour manger
 et me reposer.
 
-![Une pose à l'ombre](/assets/images/une-pose-a-lombre.jpg)
+![Une pause à l'ombre](/assets/images/une-pause-a-lombre.jpg)
 
 ![La belle bête](/assets/images/la-belle-bete.jpg)
 
