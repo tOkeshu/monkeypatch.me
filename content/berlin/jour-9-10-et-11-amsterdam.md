@@ -33,21 +33,21 @@ Je décide finalement de prendre la route la plus directe pour
 Amsterdam, j'aurai sans doute l'occasion de retrouver la LF1 d'ici
 Utrecht.
 
-Cette route ne sera ni agréable ni courte. Je longerais des heures
+Cette route ne sera ni agréable ni courte. Je longerai des heures
 durant l'autoroute (sur une piste dédiée, pas sur l'autoroute elle
 même bien sûr. Ils ne sont pas fous à ce point ces hollandais !).  La
 route est droite et semble infini. Je passerai par des semblant de
-villes, des trottoirs en travaux (mais toujours avec la route
+ville, des trottoirs en travaux (mais toujours avec la route
 indiquée) et par des parcs de banlieux.
 
 Et puis, Amsterdam ! Des vélos soudain, partout ! Je ne sais pas
 exactement où je suis malgré ma carte. Alors je roule tout droit en
-espérant atteindre une la baie.
+espérant atteindre la baie.
 
 ![Amsterdam](/assets/images/amsterdam.jpg)
 
-Mais non, je suis trop au sud. Un peu plus au nord je trouverai la «
-central station ». C'est le point de ralliement obligatoire pour tous
+Mais non, je suis trop au sud. Un peu plus au nord je trouverai la
+*central station*. C'est le point de ralliement obligatoire pour tous
 les moyens de transport de la ville, train évidemment, mais aussi bus,
 vélos et bateaux.
 
@@ -86,7 +86,7 @@ attrape touriste que les autres. Là aussi je serai surpris de voir des
 habitations et des rues tranquilles à quelques pas du centre ville.
 
 Au coin d'une rue je m'installerai dans un restaurant ni trop
-touristique ni très local pour autant. Je flannerai ensuite
+touristique ni très local pour autant. Je flânerai ensuite
 tranquillement dans les rues plus à l'ouest jusqu'à la place Rembrandt
 où des danseurs Hip Hop font leur show.
 
@@ -138,10 +138,10 @@ centre urbain pour découvrir des habitations flotantes sur le lac.
 
 J'arriverai ensuite près d'un lac artificiel, le Bosbaan. C'est un
 plan d'eau conçu spécialement pour l'aviron. J'y trouverai un coin
-d'ombre où lire tranquilement.
+d'ombre où lire tranquillement.
 
 Il fait chaud et bientôt mes deux gourdes seront à sec. Je referme
-donc mon livre et repars en direction du nord. En revenant je suivrais
+donc mon livre et repars en direction du nord. En revenant je suivrai
 le canal ouest tout du long, jusqu'à la route qui mène à la *central
 station* plus à l'est.
 
