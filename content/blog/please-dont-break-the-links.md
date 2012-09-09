@@ -1,8 +1,9 @@
 Please, don't break the links !
 ===============================
 
-The web finds its power in its hypermedia nature.
-The more simple and successful web architectures rely on hypermedia content and hyperlinks.
+The web finds its power in its hypermedia nature. The most simple and
+successful web architectures rely on hypermedia content and
+hyperlinks.
 
 Everyone understand hyperlinks. They are everywhere in our
 applications. That's the most irreductible piece of interaction
@@ -14,40 +15,51 @@ However, more and more I encounter applications that break the links.
 
 There is basically 2 possibles ways of using a link on the web.
 Either you click on it, either you use the URL the link or your
-address bar provide to access directly the hypermedia content it is
-supposed to link to.
+address bar provide to access directly the hypermedia content.
 
-In other words, you have 2 ways of breaking a link.
+In other words, you have 2 ways of breaking it:
 
+- The first is to create links that lead nowhere. There are used for
+  pure interactivity. The twitter's follow buttons  is a good example.
 
-## The missing URL
+- The second is to build URLs that are not accessible twice or
+  directly. Add a token tied to an expiration date and you time kill
+  your URLs. They're a kind of ghost URL.
 
-First, your link has only an interactive goal on thus is not tied to a
-particular content at all. Its only purpose is to be clicked. For
-example, most of the twitter buttons you use to follow other people
-are links. But they don't carry any URL that would lead you anywhere
-else. Indeed, most of the time these links have an `href` attribute
-set to an empty anchor (`#`).
+## The third eye
 
-So how is it broken is that sense ? Well, in that case interactivity
-is handled by JavaScript litterally catching the event you triggered
-by clicking the link. It's a short-circuit that serve well our goal as
-we can do whatever we want, for example display something useful. But
-sometimes, JavaScript is not here, not yet, for some reason. Thus
-nothing happens because the link doesn't lead anywhere.
+Actually there is a third way to break a link. This is a special case
+of the first one. As I said you have two ways to use a link, either
+you click it, either you acces the URL it provides. And sometimes, you
+want to acess the URL it provides by clicking on it.
 
-## The ghost URL
+Let me explain how you do this. Imagine you have a nice gallery of
+pictures that you want to browse. But the gallery use lightboxes.
+While you are ok with lightboxes, you want to acess a specific image
+without going throught the fancy effects. In other term you want to
+click a thumbnail and open a new tab with the image within it and only
+this image.
 
-The second way to break a link is to build an URL that can't be
-accessed twice, or not directly. If the URL carries a token tied to an
-expiration date for instance, its time is counted.
+A lot of browsers do that. They even allow you to do that via
+different key-strokes. For example in Firefox if you press `Ctrl`
+while clicking a link, it will open the content in a new tab. I
+personnaly use for a long time the third button of my mouse which do
+exactly that in Firefox and Chromium.
 
-These kind of URLs can't be properly shared. Because if I copy what is
-in my address bar and give it to someone else by email, there is a
-good chances that, either he will not see the same thing I do, or
-worse, he will see an error page.
+When you use this feature, what you tell to the web application is « I
+want to access directly the content of this hyperlink », like if you
+had copy and paste the corresponding URL in your address bar. In a
+sense it's a shortcut.
 
-## Fixing this
+But what happens when the link does not provide a proper URL ? It
+breaks. The newly opened tab will be often the same page.
+
+Worse, even when twitter provide a proper URL, the JavaScript catch
+this "third" click and treats it as a simple click, thus breaking the
+semantic of your action. I personnaly consider this behaviour as a
+broken UX design.
+
+## Fixing all this
 
 Fixing these probleme are no very difficult.
 

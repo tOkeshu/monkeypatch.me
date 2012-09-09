@@ -1,6 +1,7 @@
 Blog Posts
 ==========
 
+- [Please, don't break the links !](/blog/please-dont-break-the-links.html)
 - [Mixing professional and personal git configurations](/blog/mixing-professional-and-personal-git-configurations.html)
 - [Backbone-TNetStrings-0.1.0](/blog/backbone-tnetstrings-0.1.0.html)
 - [Publishing Git repositories, the quick and dirty way](/blog/publishing-git-repositories-the-quick-and-dirty-way.html)
