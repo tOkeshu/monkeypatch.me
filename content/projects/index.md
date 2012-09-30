@@ -1,6 +1,10 @@
 Projects
-==========
+========
 
+
+## [HiBuddy](https://github.com/tOkeshu/hibuddy)
+
+An experiment to make damn simple videconferences on the web.
 
 ## [Fipes](https://github.com/tOkeshu/fipes)
 
@@ -9,4 +13,10 @@ A no-hassle web service to share files with your friends. Available online at [f
 ## [Backbone-TNetStrings](/blog/backbone-tnetstrings-0.1.0.html)
 
 A [TNetStrings](http://tnetstrings.org/) adapter for Backbone.
+
+## [Feedstail](http://gitorious.org/feedstail)
+
+A tail-f-like utility for feeds. It monitor a feed and emits new
+entries. Feedstail aim to be simple, hackable and compatible with
+[rsstail](http://www.vanheusden.com/rsstail/) its C brother.
 
