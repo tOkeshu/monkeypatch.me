@@ -2,15 +2,17 @@ Romain Gauthier (tOkeshu)
 =========================
 
 
-I currently work for [af83](http://www.af83.com).
+I'm currently unemployed and **[open for hire](mailto:romain.gauthier at monkeypatch.me)**.
 
-I have graduated a
-[free software master degree](http://masteri2l.org) in 2010.
+[I do free software](/projects).
+
+I have graduated a [free software master degree](http://masteri2l.org)
+in 2010 and then worked for [af83](http://www.af83.com) for more than
+2 years.
+
 
 Contact
 -------
-
-Professional: `<romain gauthier at af83 com>`
 
 Personal: `<romain gauthier at monkeypatch me>` or `<rgauthier at masteri2l org>`
 
@@ -19,12 +21,8 @@ Irc (nickname tOkeshu on [Freenode](http://freenode.net/)):
   - [#masteri2l](irc://irc.freenode.org#masteri2l)
   - [#ung](irc://irc.freenode.org#ung)
   - [#laquadrature](irc://irc.freenode.org#laquadrature)
-  - [#seeks](irc://irc.freenode.org#seeks)
-  - [#tatoeba](irc://irc.freenode.org#tatoeba)
-  - [#lpod](irc://irc.freenode.org#lpod)
   - [#af83](irc://irc.freenode.org#af83)
   - [#bearstech](irc://irc.freenode.org#bearstech)
-  - [#ucengine](irc://irc.freenode.org#ucengine)
 
 Associations activities and membership
 --------------------------------------
@@ -56,6 +54,8 @@ with the free software movement.
 Around the Web
 --------------
 
-You can [follow me on identi.ca](http://identi.ca/tOkeshu) and see my code on
+You can [follow me on identi.ca](http://identi.ca/tOkeshu) or
+[twitter](http:/twitter.com/tOkeshu) and see my code on
 [gitorious](http://gitorious.org/~rgauthier) or
 [github](http://github.com/tOkeshu).
+
