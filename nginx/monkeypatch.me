@@ -7,45 +7,44 @@ server {
     root        /var/www/monkeypatch.me/content;
     access_log  /var/log/nginx/monkeypatch.me.access.log;
 
+    types {
+        # Serve markdown files as plain text
+        text/plain md;
+        text/css css;
+    }
+
     # Root
     location = / {
         rewrite ^ /blog;
     }
 
-    # Berlin theme
-    location ~ (/berlin/.+)\.html$ {
-        default_type 'text/html';
+    # Talks theme
+    location ~ (talks/((?!index).)+)\.html$ {
+        set $template "talks";
+        set $file $1;
 
+        try_files $uri @engine;
+    }
+
+    # Berlin theme
+    location ~ (berlin/.+)\.html$ {
         set $template "berlin";
         set $file $1;
 
-        if (-f $document_root/$1.md) {
-            content_by_lua_file /var/www/monkeypatch.me/nginx/engine.lua;
-            break;
-        }
+        try_files $uri @engine;
     }
 
     # Default theme
     location ~ (.+)\.html$ {
-        default_type 'text/html';
-
         set $template "monkeypatch.me";
         set $file $1;
 
-        if (-f $document_root/$1.md) {
-            content_by_lua_file /var/www/monkeypatch.me/nginx/engine.lua;
-            break;
-        }
+        try_files $uri @engine;
     }
 
     # Look for an index file
     location ~ .+/$ {
         rewrite (.*) $1/index.html last;
-    }
-
-    # Raw files
-    location /files {
-        alias /var/www/monkeypatch.me;
     }
 
     # Assets
@@ -60,6 +59,16 @@ server {
         }
 
         content_by_lua_file /var/www/monkeypatch.me/nginx/github-webhook.lua;
+    }
+
+    # Html rendering via lua
+    location @engine {
+        default_type 'text/html';
+
+        if (-f $document_root/$file.md) {
+            content_by_lua_file /var/www/monkeypatch.me/nginx/engine.lua;
+            break;
+        }
     }
 }
 

@@ -1,7 +1,7 @@
 require "markdown"
 
 local template_path = '/assets/templates/'..ngx.var.template..'.tpl'
-local markdown_path = '/files/content/'..ngx.var.file..'.md'
+local markdown_path = '/'..ngx.var.file..'.md'
 
 -- Generate html from the markdown file
 local md       = ngx.location.capture(markdown_path).body
