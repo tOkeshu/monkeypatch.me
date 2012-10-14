@@ -1,11 +1,20 @@
 Fipes: Beating the sneakernet
 =============================
 
-HTML5 BUG #1 (2012-10-01)
+OSDC.fr (2012-10-13)
 
 @tOkeshu
 
 ## How do you share files?
+
+## The 949 Problem
+
+![img](/assets/images/xkcd-949-file-transfer.png)
+
+« Every time you email a file to yourself so you can pull it up on
+your friend's laptop, Tim Berners-Lee sheds a single tear. »
+
+[xkcd 949](https://xkcd.com/949/)
 
 ## Sneakers!
 
@@ -19,18 +28,19 @@ from one machine to another.
 
 [The Jargon File](http://catb.org/jargon/html/S/sneakernet.html)
 
-## The sneakernet is strong!
+## Features
 
-![img](/assets/images/xkcd-949-file-transfer.png)
+![img](/assets/images/my-shoes-by-daveybot.jpg)
 
-« Every time you email a file to yourself so you can pull it up on
-your friend's laptop, Tim Berners-Lee sheds a single tear. »
+- High troughput
+- **Privacy friendly**
+- Easy to use
+- Easy to understand
+- **High Latency**
 
-[The 949 problem](https://xkcd.com/949/)
+## To beat the sneakernet
 
-## I want...
-
-I want a privacy friendly open source web application that doesn't ask
+We need a privacy friendly open source web application that doesn't ask
 me for an account and doesn't keep any data about me or my files.
 
 ## Files + Pipes = Fipes
@@ -59,6 +69,19 @@ I don't need to. Because I don't store any data on the server.
 
 As soon as the data hits the server, the data is immediatly sent to the
 downloader. No storage, ever.
+
+## Show us the code!
+
+Full JavaScript frontend:
+
+- Backbone.js
+- HTML5 File API
+- HTML5 WebSockets
+
+Erlang on the server side:
+
+- Cowboy: every request is an Erlang process
+- The uploaders and the downloaders have their own Erlang process that talk to each others
 
 ##
 
@@ -110,7 +133,7 @@ this.ws.onmessage = function (evt) {
 };
 </code></pre>
 
-##
+## Example of a real time event
 
 <pre><code data-language="javascript">
 {
@@ -128,21 +151,12 @@ this.ws.onmessage = function (evt) {
 ##
 
 <pre><code data-language="javascript">
+// request = {type: "stream", file: "4CBECEBF793B4", downloader: "4CBECEBB77B6C", seek: 0}
 var stream = function(ws, request) {
     var file = App.Files.get(request.file).get('obj'); // File object
     var reader = new FileReader;
     var seek = request.seek;
     var slice = 1024 * 512; // 512 KB
-
-    reader.onload = function(e) {
-        var data = btoa(e.target.result);
-        var chunkEvent = tnetstrings.dump({
-            type : "chunk",
-            payload : data,
-            downloader : e.downloader
-        });
-        ws.send(chunkEvent);
-    }
 
     // Stream the file
     if (seek < file.size) {
@@ -152,11 +166,53 @@ var stream = function(ws, request) {
     } else {
         var eos = tnetstrings.dump({
             type: "eos",
-            downloader: e.downloader
+            downloader: request.downloader
         });
         ws.send(eos);
     }
-}
+
+    reader.onload = function(e) {
+        var data = btoa(e.target.result);
+        var chunkEvent = tnetstrings.dump({
+            type : "chunk",
+            payload : data,
+            downloader : request.downloader
+        });
+        ws.send(chunkEvent);
+    }
+};
+</code></pre>
+
+## The uploader process
+
+<pre><code data-language="erlang">
+rpc(Fipe, <<"chunk">>, Event) ->
+    Payload    = proplists:get_value(payload, Event),
+    Uid        = proplists:get_value(downloader, Event),
+
+    [{{Fipe, Uid}, Downloader}] = ets:lookup(downloaders, {Fipe, Uid}),
+    Downloader ! {chunk, base64:decode(Payload)};
+</code></pre>
+
+<pre><code data-language="erlang">
+rpc(Fipe, <<"eos">>, Event) ->
+    Uid = proplists:get_value(downloader, Event),
+    [{{Fipe, Uid}, Downloader}] = ets:lookup(downloaders, {Fipe, Uid}),
+    Downloader ! {chunk, eos};
+</code></pre>
+
+## The downloader process
+
+<pre><code data-language="erlang">
+stream(Fipe, Uid, Req) ->
+    receive
+        {chunk, eos} ->
+            ets:delete(downloaders, {Fipe, Uid}),
+            {ok, Req};
+        {chunk, Chunk} ->
+            cowboy_http_req:chunk(Chunk, Req),
+            stream(Fipe, Uid, Req)
+    end.
 </code></pre>
 
 ## « I lied to you » and the future.
