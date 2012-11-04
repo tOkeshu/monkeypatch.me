@@ -2,7 +2,9 @@ Romain Gauthier (tOkeshu)
 =========================
 
 
-I'm currently unemployed and **[open for hire](mailto:romain.gauthier at monkeypatch.me)**.
+I'm currently unemployed and **[open for hire](mailto:romain.gauthier
+at monkeypatch.me)**, here is my
+**[resume](/~tOkeshu/cv.romain_gauthier.2012-10-21.pdf)**.
 
 [I do free software](/projects).
 
