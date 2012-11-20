@@ -10,7 +10,7 @@ Fipes different from other projects like
 [Dropbox](https://www.dropbox.com), [Box](http://box.com) or even
 *Open Source* solutions like [SparkleShare](http://sparkleshare.org/) and
 [Syncany](http://www.syncany.org/), is that Fipes is
-*privacy-friendly* and *more simple*.
+*privacy-friendly* and *simpler*.
 
 
 Privacy-Friendly
@@ -31,7 +31,7 @@ goals:
   - Provide a small web application.
   - Should be easy to install, to launch and to use.
   - Should **not** keep any sensitive data about you or your files.
-  - Being free as in freedom, in other words a free software.
+  - Being free as in freedom, in other words free software.
 
 To this end, Fipes takes a radical approach at the technical level.
 
