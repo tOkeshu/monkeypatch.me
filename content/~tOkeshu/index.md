@@ -1,30 +1,15 @@
 Romain Gauthier (tOkeshu)
 =========================
 
-
-I'm currently unemployed and **[open for hire](mailto:romain.gauthier
-at monkeypatch.me)**, here is my
-**[resume](/~tOkeshu/cv.romain_gauthier.2012-10-21.pdf)**.
-
-[I do free software](/projects).
-
-I have graduated a [free software master degree](http://masteri2l.org)
-in 2010 and then worked for [af83](http://www.af83.com) for more than
-2 years.
-
+I work at Mozilla and [I do free software](/projects).
 
 Contact
 -------
 
-Personal: `<romain gauthier at monkeypatch me>` or `<rgauthier at masteri2l org>`
+Personal: `<romain gauthier at monkeypatch me>`
+Professional: `<rgauthier at mozilla com>`
 
-Irc (nickname tOkeshu on [Freenode](http://freenode.net/)):
-
-  - [#masteri2l](irc://irc.freenode.org#masteri2l)
-  - [#ung](irc://irc.freenode.org#ung)
-  - [#laquadrature](irc://irc.freenode.org#laquadrature)
-  - [#af83](irc://irc.freenode.org#af83)
-  - [#bearstech](irc://irc.freenode.org#bearstech)
+Irc (nickname tOkeshu on [Freenode](http://freenode.net/)).
 
 Associations activities and membership
 --------------------------------------
