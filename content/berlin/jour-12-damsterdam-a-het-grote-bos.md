@@ -74,7 +74,7 @@ route.
 La lumière commence à se faire rare, alors je rentre et me couche avec
 le chant des oiseaux.
 
-## Trajet
+## Trajet (90.91 km)
 
 - Amsterdam
 - Diemen
