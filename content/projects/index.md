@@ -4,7 +4,7 @@ Projects
 
 ## [HiBuddy](https://github.com/tOkeshu/hibuddy)
 
-An experiment to make damn simple videconferences on the web.
+A damn simple web service to make video calls.
 
 ## [Fipes](https://github.com/tOkeshu/fipes)
 
