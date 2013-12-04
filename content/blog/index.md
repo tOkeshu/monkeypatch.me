@@ -1,6 +1,7 @@
 Blog Posts
 ==========
 
+- [Using different endpoints/protocols for git push and fetch](/blog/using-different-endpoints-protocols-for-git-push-and-fetch.html)
 - [Pair Tinkering](/blog/pair-tinkering.html)
 - [Fixing the 949 problem with Fipes](/blog/fixing-the-949-problem-with-fipes.html)
 - [Mixing professional and personal git configurations](/blog/mixing-professional-and-personal-git-configurations.html)
